@@ -267,22 +267,37 @@
 
 
 /* Section footer */
-.pied-bas{
+.footer-div{
     height: 100px;
     background: #000000;
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+.copyrigth{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 2rem;
+    display: flex;
     align-items: center;
 }
-.vers-haut{
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3rem;
     height: 70px;
     width: 70px;
-    border-radius: 70px;
-    font-size: 2rem;
-    color: #000000;
+    border-radius: 100%;
     background: #FFFFFF;
+    margin-top: 1.2rem;
+    margin-left: 75%;
 }
+
 /* Fin footer */
 
 
@@ -308,6 +323,12 @@
 
 /* Media query Mobile  */
 @media only screen and (max-width: 500px) {
+    .mon-navbar{
+        height: 60px;
+    }
+    .logo-titre{
+        font-size: 24px;
+    }
     .photo-and-description{
         flex-direction: column;
     }
@@ -430,5 +451,21 @@
         align-items: center;
     }
     /* FIn Formulaire */
+
+    /* Footer  */
+    .icone{
+        margin-left: 5rem;
+        margin-right: 1rem;
+        
+
+        font-size: 2rem;
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+    }
+    .copyrigth{
+        font-size: 13px;
+    }
+    /* Fin footer */
   }
 /* Fin media query mobile */
