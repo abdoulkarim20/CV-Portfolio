@@ -157,6 +157,47 @@
 }
 /* Fin Section a propos de moi et quqlite personnelle */
 
+/* Section Foramtion */
+.case-text-formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 264px;
+    width: 466px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-right: 2rem;  
+}
+.text-formation{
+    width: 312px;
+    height: 168;
+   
+}
+
+.icone-grade{
+    font-size: 3rem;
+    margin-right: 0.5rem;
+}
+.formation-date{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+.formation-libelle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+/* Fin Section Formation */
+
 
 
 
@@ -218,5 +259,27 @@
         margin-left: 1%;
     }
     /* Fin a propos de moi et qualite personnelle */
+
+
+    /* Section Foramtion */
+.case-text-formation{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+    width: 96%;
+}
+.icone-grade{
+    font-size: 1.5rem;
+}
+.formation-libelle{
+    font-size: 14px;
+    line-height: 20px;
+}
+.formation-date{
+    font-size: 17px;
+}
+/* Fin Section Formation */
   }
 /* Fin media query mobile */
