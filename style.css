@@ -14,6 +14,7 @@
         background: #F2EAEA;
         height: 100px;
         z-index: 99;
+        position: absolute;
     }
     .logo-titre{
         font-style: normal;
@@ -120,10 +121,7 @@
         display: flex;
         flex-direction: column;
     }
-    .web-developper{
-        
-    
-    }
+  
 /* Fin section a propos de moi */
 
 /* Section a propos de moi et quqlite personnelle */
@@ -198,6 +196,75 @@
 }
 /* Fin Section Formation */
 
+/* Section experience  */
+.experience{
+    height: 647px;
+    display: flex;
+    justify-content: center;
+    
+}
+.case-text-experience {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 466px;
+    height: 261.64px;
+    /* margin-left: 2rem; */
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+/* Fin section experience */
+
+
+/* Formulaire */
+.div-champ{
+    display: flex;
+    flex-direction: row;
+}
+.champ-nom{
+    margin-top: 20px;      
+    margin-right: 2rem;
+    Width:400px;
+    Height: 74px;
+    border-radius: 10px;
+    /* margin-bottom: 3%; */
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+
+}
+.message-text{
+    margin-top: 20px; 
+    Width:825px;
+    Height:200px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+   
+}
+.contact{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 385px;
+    width: 360px;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.icone-and-contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-icone{
+    height: 87px;
+    width: 87px;
+    border-radius: 100%;
+}
+/* Fin Formulaire */
+
 
 
 
@@ -220,7 +287,7 @@
 
 
 /* Media query Mobile  */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .photo-and-description{
         flex-direction: column;
     }
@@ -262,24 +329,86 @@
 
 
     /* Section Foramtion */
-.case-text-formation{
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: auto;
-    width: 96%;
-}
-.icone-grade{
-    font-size: 1.5rem;
-}
-.formation-libelle{
-    font-size: 14px;
-    line-height: 20px;
-}
-.formation-date{
-    font-size: 17px;
-}
-/* Fin Section Formation */
+    .case-text-formation{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: auto;
+        width: 96%;
+    }
+    .icone-grade{
+        font-size: 1.5rem;
+    }
+    .formation-libelle{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .formation-date{
+        font-size: 17px;
+    }
+    /* Fin Section Formation */
+
+    /* Experience */
+    .case-text-experience{
+        width: 90%;
+        height: auto;
+        /* margin-left: 2%; */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .exerience-case{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    /* Fin experience */
+
+
+
+    /* Formulaire */
+    .champ-nom , .message-text{
+        height: auto;
+        width: auto;
+       
+    }
+    .div-champ{
+        flex-direction: column;
+    }
+
+    .dispositif{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formulaire , .contact{
+        /* margin-bottom: 3rem; */
+        justify-content: center;
+        height: auto;
+        width: auto;
+        margin-left: 0;
+    }
+    .champ-nom{
+        width: 100%;
+    }
+    .message-text{
+        width: 100%;
+        height: 160px;
+    }
+    .icone-and-contenu{
+        justify-content: center;
+    }
+    .icone-and-contenu{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .contenu-contact{
+        justify-content: center;
+        align-items: center;
+    }
+    /* FIn Formulaire */
   }
 /* Fin media query mobile */
