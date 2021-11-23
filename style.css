@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+/* NavBar */
+    .mon-navbar{
+        background: #F2EAEA;
+        height: 100px;
+        z-index: 99;
+    }
+    .logo-titre{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+        margin-left:3.68%;
+    }
+    .button-contact{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        height: 47px;
+        width: 177px;
+        background: #50EF28;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* Fin Navbar */
+
+/* Section a propos de moi */
+    .image-banniere{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(58, 57, 57, 0.5)),url('image/imagebanner.jpg') center center fixed
+        no-repeat;
+        background-size: cover;
+        height: 850px;
+    }
+    .cadre-profile{
+        height: 641px;
+        background: rebeccapurple;
+        border: 1px solid #E5E5E5;
+        margin-top: -20%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .case-photo-profile{
+        height: 459px;
+        width: 390px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0,25);
+        background: chartreuse;
+    }
+    .photo-profile{
+        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
+        height: 459px;
+        width: 390px;
+        border-radius: 20px;
+        margin-left: 5px;
+    }
+
+
+    .photo-and-description{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .photo{
+        display: flex;
+        height: 459px;
+        width: 390px;
+        border-radius: 20px;
+        /* box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0,25); */
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .cadre-icone{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background: chartreuse;   
+    }
+
+    .description{
+        width: 574px;
+        height: 440px;
+        background: crimson;
+        margin-top: 3%;
+        margin-left: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+    }
+    .nom{
+        font-style: normal;
+        font-size: 24px;
+    }
+    .nom-and-fonction{
+        Width:402px;
+        Height:68px;
+        /* background: greenyellow; */
+        display: flex;
+        flex-direction: column;
+    }
+    .web-developper{
+        
+    
+    }
+/* Fin section a propos de moi */
+
+/* Section a propos de moi et quqlite personnelle */
+.titre-section{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+
+    color: #000000;
+
+}
+.text-section{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenu{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    color: #000000;
+    width: 95%;
+    margin-left: 1%;
+}
+/* Fin Section a propos de moi et quqlite personnelle */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query Mobile  */
+@media only screen and (max-width: 400px) {
+    .photo-and-description{
+        flex-direction: column;
+    }
+    .photo{
+        width: 292px;
+        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .cadre-profile{
+        justify-content: center;
+    }
+    .cadre-profile{
+        height: 100%;
+    }
+    .description{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    /* A propos de moi et quqlite personnelle */
+    .text-section{
+        height: auto;
+    }
+    .titre-section{
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contenu{
+        height: auto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 1%;
+    }
+    /* Fin a propos de moi et qualite personnelle */
+  }
+/* Fin media query mobile */
