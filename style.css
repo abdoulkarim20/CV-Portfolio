@@ -300,6 +300,26 @@
 
 /* Fin footer */
 
+/* Centre interet */
+.centre-interet-case{
+    height: 293px;
+    display: flex;
+    flex-direction: row;
+    background: burlywood;
+
+}
+.icone-centre-interet{
+    margin-left: 2rem;
+    margin-right: 2rem;
+ 
+}
+.image-centre-interet{
+    height: 260px;
+    width: 260px;
+    border-radius: 100%;
+}
+/* Fin centre interet */
+
 
 
 
@@ -467,5 +487,28 @@
         font-size: 13px;
     }
     /* Fin footer */
+
+
+    /* Centre interet */
+    .centre-interet-case{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .image-centre-interet{
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+    .icone-centre-interet{
+        margin-left: 0;
+        margin-right: 0;
+        width: 50%;
+    }
+    
+
+    /* Fin centre interet */
   }
 /* Fin media query mobile */
