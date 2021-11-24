@@ -7,8 +7,6 @@
 }
 
 
-
-
 /* NavBar */
     .mon-navbar{
         background: #F2EAEA;
@@ -38,6 +36,9 @@
         justify-content: center;
         align-items: center;
         border-color: transparent;
+    }
+    .div-color{
+        background: #F2EAEA;
     }
 /* Fin Navbar */
 
