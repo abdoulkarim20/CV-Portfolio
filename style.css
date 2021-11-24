@@ -399,6 +399,73 @@
 /* Fin cadre langue */
 
 
+/* Section competances */
+.cadre-competance{
+    height: 546px;
+}
+.pourcentage-position{
+    margin-left: 14rem;
+    margin-top: -1.2rem;
+}
+.competance-pourcentage{
+    margin-top: -1rem;
+}
+.nom-competance {
+    margin-top:0.5rem ;
+}
+.html{
+    width: 163px;
+    height: 12.08px;
+    background: #2E75E0;
+    border-radius: 10px;
+}
+.css{
+    width: 155px;
+    height: 12.08px;
+    background: #B1E02E;
+    border-radius: 10px;
+}
+.javascript{
+    width: 112px;
+    height: 12.08px;
+    background: #E0982E;
+    border-radius: 10px;
+}
+.bootstrap{
+    width: 158px;
+    height: 12.08px;
+    background: #2EE0C0;
+    border-radius: 10px;
+}
+.php{
+    width: 187px;
+    height: 12.08px;
+    background:  #2EE0C0;
+    border-radius: 10px;
+}
+.java{
+    width: 151px;
+    height: 12.08px;
+    background: #C72EE0;
+    border-radius: 10px;
+}
+.github{
+    width: 155px;
+    height: 12.08px;
+    background: #2EE0C0;
+    border-radius: 10px;
+}
+.ux-ui{
+    width: 188px;
+    height: 12.08px;
+    background: #2EE0C0;;
+    border-radius: 10px;
+}
+
+
+/* Fin section competances */
+
+
 
 
 
@@ -610,7 +677,8 @@
 
     /* Cadre langue */
     .cadre-langue{
-        
+        width: 100%;
+        height: 100%;
     }
     .langue-parler{
         /* width: 291px; */
@@ -638,5 +706,39 @@
         justify-content: center;
     }
     /* Fin cadre langue */
+
+    /* Competance */
+    .pourcentage-position{
+        margin-left: 7.3rem;
+    }
+    .cadre-competance{
+        height: 100%;
+        width: 100%;
+    }
+    .html{
+        width: 108px;
+    }
+    .css{
+        width: 93px;
+    }
+    .javascript{
+        width: 66px;
+    }
+    .bootstrap{
+        width: 93px;
+    }
+    .php{
+       width: 110px; 
+    }
+    .java{
+        width: 88px;
+    }
+    .github{
+        width: 90px;
+    }
+    .ux-ui{
+        width: 110px;
+    }
+    /* Fin competance */
   }
 /* Fin media query mobile */
