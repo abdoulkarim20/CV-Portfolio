@@ -48,6 +48,7 @@
         no-repeat;
         background-size: cover;
         height: 850px;
+        width: 100%;
     }
     .cadre-profile{
         height: 641px;
@@ -96,6 +97,11 @@
         height: 100px;
         width: 100%;
         background: chartreuse;   
+    }
+    .style-icone{
+        font-size: 3rem;
+        margin-right: 1.5rem;
+        color: #FFFFFF;
     }
 
     .description{
@@ -467,6 +473,135 @@
 
 
 
+/* partie profile */
+.profile-brief{
+    height: 641px;
+    background: #f3efef;
+    border: 1px solid #E5E5E5;
+}
+.photo-profile{
+    box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 459px;
+    width: 80%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.hello{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 80px;
+    /* or 333% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.hello-div{
+    width: 161px;
+    height: 61px;
+    background: #50EF28;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+
+.nom-and-fonction{
+    Width:402px;
+    Height:68px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nom-devlopper{
+    width: 402px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-developer{
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 80px;
+    /* or 333% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.mot-appelle{
+    margin-top: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 80px;
+    /* or 333% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.fonction-karim{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 80px;
+    color: #000000;
+    text-align: center;
+    margin-top: -3rem;
+}
+.age-div{
+    display: flex;
+    flex-direction: row;
+    
+}
+.titre{
+    font-style: normal;   
+    font-size: 18px;
+    color: #000000;
+}
+.contenu-section{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 200;   
+    color: #000000;
+}
+.aligne{
+    display: flex;
+    flex-direction: row;
+}
+.age{
+    margin-left: 50%;
+}
+.Adresse{
+    margin-left: 45.3%;
+}
+.email{
+    margin-left: 48%;
+}
+.telepone{
+    margin-left: 42%;
+}
+.categorie{
+    margin-left:33% ;
+}
+
+/* Fin partie profile */
+
+
 
 
 
@@ -487,7 +622,7 @@
 
 
 /* Media query Mobile  */
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width:768px) {
     .mon-navbar{
         height: 60px;
     }
@@ -621,8 +756,6 @@
     .icone{
         margin-left: 5rem;
         margin-right: 1rem;
-        
-
         font-size: 2rem;
         height: 60px;
         width: 60px;
@@ -740,5 +873,40 @@
         width: 110px;
     }
     /* Fin competance */
+
+
+
+     /* profil */
+     .profile-brief{
+        height: 100%;
+    }
+    .photo-profile{
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+    .fonction-karim{
+        font-size: 13px;
+        text-align: left;
+        
+    }
+    .name-developer{
+        font-size: 18px;
+    }
+    .mot-appelle{
+        font-size: 18px;
+    }
+    .aligne{
+        flex-direction: column;
+    }
+    .age,.Adresse,.categorie,.email,.telepone{
+        margin-left: 0;
+    }
+    .style-icone{
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+    /* fin profile */
   }
 /* Fin media query mobile */
