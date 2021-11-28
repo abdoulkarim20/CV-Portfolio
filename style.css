@@ -6,136 +6,73 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-
-/* NavBar */
-    .mon-navbar{
-        background: #F2EAEA;
-        height: 100px;
-        z-index: 99;
-        position: absolute;
-    }
-    .logo-titre{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
-        color: #000000;
-        margin-left:3.68%;
-    }
-    .button-contact{
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        height: 47px;
-        width: 177px;
-        background: #50EF28;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-color: transparent;
-    }
-    .div-color{
-        background: #F2EAEA;
-    }
+/* Navbr */
+.mon-navbar{
+    background: #F2EAEA;
+    height: 100px;
+    z-index: 99;
+    position: absolute;
+}
+.logo-titre{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-left:3.68%;
+}
+.button-contact{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    height: 47px;
+    width: 177px;
+    background: #50EF28;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+}
+.div-color{
+    background: #F2EAEA;
+}
 /* Fin Navbar */
 
-/* Section a propos de moi */
-    .image-banniere{
-        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(58, 57, 57, 0.5)),url('image/imagebanner.jpg') center center fixed
-        no-repeat;
-        background-size: cover;
-        height: 850px;
-    }
-    .cadre-profile{
-        height: 641px;
-        background: rebeccapurple;
-        border: 1px solid #E5E5E5;
-        margin-top: -20%;
-        display: flex;
-        flex-direction: column;
-
-    }
-    .case-photo-profile{
-        height: 459px;
-        width: 390px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0,25);
-        background: chartreuse;
-    }
-    .photo-profile{
-        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
-        height: 459px;
-        width: 390px;
-        border-radius: 20px;
-        margin-left: 5px;
-    }
-
-
-    .photo-and-description{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .photo{
-        display: flex;
-        height: 459px;
-        width: 390px;
-        border-radius: 20px;
-        /* box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0,25); */
-        margin-left: 2%;
-        margin-top: 2%;
-    }
-    .cadre-icone{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 100%;
-        background: chartreuse;   
-    }
-
-    .description{
-        width: 574px;
-        height: 440px;
-        background: crimson;
-        margin-top: 3%;
-        margin-left: 7%;
-        display: flex;
-        flex-direction: column;
-    }
-    .text{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-    }
-    .nom{
-        font-style: normal;
-        font-size: 24px;
-    }
-    .nom-and-fonction{
-        Width:402px;
-        Height:68px;
-        /* background: greenyellow; */
-        display: flex;
-        flex-direction: column;
-    }
-  
-/* Fin section a propos de moi */
-
-/* Section a propos de moi et quqlite personnelle */
-.titre-section{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 49px;
-
-    color: #000000;
-
+/* section baniere */
+.image-banniere{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(58, 57, 57, 0.5)),url('image/imagebanner.jpg') center center fixed
+    no-repeat;
+    background-size: cover;
+    height: 850px;
+    width: 100%;
 }
+/* Fin section banniere */
+
+
+/* Centre interet section */
+.image-centre-interet{
+    width: 218px;
+    height: 218px;
+    border-radius: 100%;
+}
+.centre-div{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Fin centre interet section */
+
+
+/* section a poropos de moi */
 .text-section{
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
@@ -152,58 +89,42 @@
     font-size: 30px;
     line-height: 41px;
     color: #000000;
-    width: 95%;
     margin-left: 1%;
 }
-/* Fin Section a propos de moi et quqlite personnelle */
+.titre-section{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+/* Fin section a propos de moi */
 
-/* Section Foramtion */
-.case-text-formation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 264px;
-    width: 466px;
-    border: 1px solid rgba(229, 229, 229, 1);
+
+/* section experience */
+
+.experience-div{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    margin-right: 2rem;  
-}
-.text-formation{
-    width: 312px;
-    height: 168;
-   
-}
-
-.icone-grade{
-    font-size: 3rem;
-    margin-right: 0.5rem;
 }
 .formation-date{
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
     line-height: 33px;
-
     color: #000000;
+    text-align: center;
 }
+
 .formation-libelle{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 33px;
-
     color: #000000;
-}
-/* Fin Section Formation */
-
-/* Section experience  */
-.experience{
-    height: 647px;
-    display: flex;
-    justify-content: center;
-    
+    margin-left: 1%;
 }
 .case-text-experience {
     background: #FFFFFF;
@@ -211,118 +132,23 @@
     box-sizing: border-box;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    width: 466px;
-    height: 261.64px;
-    /* margin-left: 2rem; */
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-}
-
-/* Fin section experience */
-
-
-/* Formulaire */
-.div-champ{
-    display: flex;
-    flex-direction: row;
-}
-.champ-nom{
-    margin-top: 20px;      
-    margin-right: 2rem;
-    Width:400px;
-    Height: 74px;
-    border-radius: 10px;
-    /* margin-bottom: 3%; */
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-
-}
-.message-text{
-    margin-top: 20px; 
-    Width:825px;
-    Height:200px;
-    border-radius: 10px; 
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-   
-}
-.contact{
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    height: 385px;
-    width: 360px;
-    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
     margin-top: 1rem;
-    margin-left: 3rem;
+    margin-bottom: 1rem;
+    height: 200px;
 }
-.icone-and-contenu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.image-icone{
-    height: 87px;
-    width: 87px;
-    border-radius: 100%;
-}
-/* Fin Formulaire */
-
-
-/* Section footer */
-.footer-div{
-    height: 100px;
-    background: #000000;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.copyrigth{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-}
-.icone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+.icone-grade{
     font-size: 3rem;
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
-    background: #FFFFFF;
-    margin-top: 1.2rem;
-    margin-left: 75%;
+    margin-right: 0.5rem;
 }
 
-/* Fin footer */
+/* Fin section experinece */
 
-/* Centre interet */
-.centre-interet-case{
-    height: 293px;
-    display: flex;
-    flex-direction: row;
-    background: burlywood;
 
-}
-.icone-centre-interet{
-    margin-left: 2rem;
-    margin-right: 2rem;
- 
-}
-.image-centre-interet{
-    height: 260px;
-    width: 260px;
-    border-radius: 100%;
-}
-/* Fin centre interet */
-
+/* Langue section  */
 /* Cadre langue */
+.langue-div{
+    margin-top: 0.5rem;
+}
 .cadre-langue{
     height: 466px;
 }
@@ -331,8 +157,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 501px;
-    height: 98px;
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -397,9 +221,13 @@
     
 }
 /* Fin cadre langue */
+/* Fin langue section */
 
 
 /* Section competances */
+.competemce-div{
+    height: 60px;
+}
 .cadre-competance{
     height: 546px;
 }
@@ -466,6 +294,256 @@
 /* Fin section competances */
 
 
+/* partie profile */
+.marge-haut{
+    margin-top: -25rem;
+}
+.profile-brief{
+    height: 641px;
+    background: #f3efef;
+    border: 1px solid #E5E5E5;
+}
+.photo-profile{
+    box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 459px;
+    width: 80%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.hello{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hello-div{
+    width: 161px;
+    height: 61px;
+    background: #50EF28;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.nom-devlopper{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-developer{
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.mot-appelle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+    display: flex;
+    color: #000000;
+}
+.fonction-karim{
+    font-style: normal;
+    font-size: 15px;
+    color: #000000;
+    margin-left: 4rem;
+}
+.age-div{
+    display: flex;
+    flex-direction: row;
+    
+}
+.titre{
+    font-style: normal;   
+    font-size: 18px;
+    color: #000000;
+}
+.contenu-section{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 200;   
+    color: #000000;
+}
+.aligne{
+    display: flex;
+    flex-direction: row;
+}
+.age{
+    margin-left: 32%;
+}
+.Adresse{
+    margin-left: 28%;
+}
+.email{
+    margin-left: 30%;
+}
+.telepone{
+    margin-left: 25%;
+}
+.categorie{
+    margin-left:17% ;
+}
+.mar-haut{
+    margin-top: -17%;
+}
+
+
+.cadre-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: chartreuse;   
+}
+.style-icone{
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    color: #FFFFFF;
+}
+
+/* Fin partie profile */
+
+
+
+/* Formulaire */
+.div-champ{
+    display: flex;
+    flex-direction: row;
+}
+.champ-nom{
+    margin-top: 15px;      
+    Height: 74px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+
+}
+.message-text{
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    Height:180px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+   
+}
+.contact{
+    padding-top: 2rem;
+    margin-left: -5rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.icone-and-contenu{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+}
+.image-icone{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    /* margin-right: 5rem; */
+}
+.phone-number{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+.contenu-contact{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 5rem;
+   
+}
+.sectio-map{
+    display: flex;
+    flex-direction: column;
+}
+/* Fin Formulaire */
+
+/* Reference */
+.referent-div {
+    height: 410px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+
+}
+.photo-reference{
+    box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 359px;
+    width: 80%;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.name-referent{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: #000000;
+}
+.formation-libelle-referent{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+/* Fin reference */
+
+
+/* Section footer */
+.footer-div{
+    height: 100px;
+    background: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.copyrigth{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3rem;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    margin-top: 1.2rem;
+    margin-left: 75%;
+}
+
+/* Fin footer */
 
 
 
@@ -479,44 +557,75 @@
 
 
 
-
-
-
-
-
-
-
-/* Media query Mobile  */
-@media only screen and (max-width: 500px) {
+/* Media query mobile */
+@media only screen and (min-width: 320px) and (max-width:768px) {
+    /* navbar section */
     .mon-navbar{
         height: 60px;
     }
     .logo-titre{
         font-size: 24px;
     }
-    .photo-and-description{
-        flex-direction: column;
-    }
-    .photo{
-        width: 292px;
-        box-shadow: 0px 4px 9px 10px rgba(0, 0, 0, 0.25);
-        justify-content: center;
-        margin-left: 0;
-        width: 100%;
-    }
-    .cadre-profile{
-        justify-content: center;
-    }
-    .cadre-profile{
+    /* Fin navbar section */
+
+     /* profil */
+    /* .marge-haut{
+       
+    } */
+    .profile-brief{
         height: 100%;
     }
-    .description{
-        margin-left: 0%;
+    .hello-div{
+        margin-top: 1rem;
+    }
+    .photo-profile{
+        height: 100%;
         width: 100%;
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+    .fonction-karim{
+        font-size: 10px;
+    }
+    .name-developer{
+        font-size: 15px;
+    }
+    .mot-appelle{
+        font-size: 18px;
+    }
+    .aligne{
+        flex-direction: column;
+    }
+    .age,.Adresse,.categorie,.email,.telepone{
+        margin-left: 0;
+    }
+    .style-icone{
+        margin-right: 1rem;
+        font-size: 2rem;
     }
 
-    /* A propos de moi et quqlite personnelle */
-    .text-section{
+    .mar-haut{
+        margin-top: -2rem;
+    }
+    .mot-appelle{
+        margin-right: 0.5rem;
+    }
+    /* fin profile */
+
+    /* centre interet section */
+    .centre-div{
+        height: 100%;
+    }
+    .image-centre-interet{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 130px;
+        height: 130px;
+    }
+    /* Fin centre ineret section */
+
+      /* A propos de moi et quqlite personnelle */
+      .text-section{
         height: auto;
     }
     .titre-section{
@@ -534,18 +643,7 @@
     /* Fin a propos de moi et qualite personnelle */
 
 
-    /* Section Foramtion */
-    .case-text-formation{
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        height: auto;
-        width: 96%;
-    }
-    .icone-grade{
-        font-size: 1.5rem;
-    }
+    /* section experience */
     .formation-libelle{
         font-size: 14px;
         line-height: 20px;
@@ -553,162 +651,53 @@
     .formation-date{
         font-size: 17px;
     }
-    /* Fin Section Formation */
-
-    /* Experience */
     .case-text-experience{
-        width: 90%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        width: 97%;
         height: auto;
-        /* margin-left: 2%; */
-        margin-left: 0;
-        margin-right: 0;
     }
-    .exerience-case{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
+    .icone-grade{
+        font-size: 1.5rem;
     }
-    /* Fin experience */
+    /* Fin section experience */
 
-
-
-    /* Formulaire */
-    .champ-nom , .message-text{
-        height: auto;
-        width: auto;
-       
-    }
-    .div-champ{
-        flex-direction: column;
-    }
-
-    .dispositif{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .formulaire , .contact{
-        /* margin-bottom: 3rem; */
-        justify-content: center;
-        height: auto;
-        width: auto;
-        margin-left: 0;
-    }
-    .champ-nom{
-        width: 100%;
-    }
-    .message-text{
-        width: 100%;
-        height: 160px;
-    }
-    .icone-and-contenu{
-        justify-content: center;
-    }
-    .icone-and-contenu{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 1rem;
-    }
-    .contenu-contact{
-        justify-content: center;
-        align-items: center;
-    }
-    /* FIn Formulaire */
-
-    /* Footer  */
-    .icone{
-        margin-left: 5rem;
-        margin-right: 1rem;
-        
-
-        font-size: 2rem;
-        height: 60px;
-        width: 60px;
-        border-radius: 100%;
-    }
-    .copyrigth{
-        font-size: 13px;
-    }
-    /* Fin footer */
-
-
-    /* Centre interet */
-    .centre-interet-case{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .image-centre-interet{
-        /* margin-left: 1rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem; */
-        width: 130px;
-        height: 130px;
-    }
-    .icone-centre-interet{
-        margin-left: 0;
-        margin-right: 0;
-        width: 50%;
-    }
-    .marge-image1{
-        margin-left: 1rem;
-        margin-top: 1rem;
-        
-    }
-    .marge-image2{
-        margin-top: 1rem;
-        
-    }
-    .marge-image3{
-        margin-left: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        
-    }
-    .marge-image4{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    /* Fin centre interet */
-
-
-    /* Cadre langue */
-    .cadre-langue{
-        width: 100%;
-        height: 100%;
-    }
-    .langue-parler{
-        /* width: 291px; */
-        /* margin-bottom: 1rem; */width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
-        border-radius: 10px;
-
-        
-    }
-    .pourcentage{
-        width: 155.89px;
-    }
-    .francais{
-        width: 141px;
-    }
-    .anglais, .wolof{
-        width:68.33px;
-    }
-    .poular , .malike, .soussou {
-        width:149.83px;
-    }
-    .langue-and-pourcentage{
-        display: flex;
-        justify-content: center;
-    }
-    /* Fin cadre langue */
-
-    /* Competance */
-    .pourcentage-position{
+        /* Cadre langue */
+        .cadre-langue{
+            width: 100%;
+            height: 100%;
+        }
+        .langue-parler{
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+            border-radius: 10px;  
+        }
+        .pourcentage{
+            width: 155.89px;
+        }
+        .francais{
+            width: 141px;
+        }
+        .anglais, .wolof{
+            width:68.33px;
+        }
+        .poular , .malike, .soussou {
+            width:149.83px;
+        }
+        .langue-and-pourcentage{
+            display: flex;
+            justify-content: center;
+        }
+        .nom-langue{
+            font-size: 17px;
+        }
+        .maitrise-langue{
+            font-size: 14px;
+        }
+        /* Fin cadre langue */
+     /* Competance */
+     .pourcentage-position{
         margin-left: 7.3rem;
     }
     .cadre-competance{
@@ -740,5 +729,222 @@
         width: 110px;
     }
     /* Fin competance */
-  }
-/* Fin media query mobile */
+
+    /* refrence */
+    .name-referent{
+        font-size: 20px;
+        margin-top: 1.5rem;
+    }
+    .photo-reference{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .referent-div{
+        height: auto;
+        width: auto;
+    }
+    .referent-libelle-div{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    /* Fin reference */
+
+
+        /* Footer  */
+        .icone{
+            margin-left: 5rem;
+            margin-right: 1rem;
+            font-size: 2rem;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+        }
+        .copyrigth{
+            font-size: 13px;
+        }
+        /* Fin footer */
+        .contact{
+            height: auto;
+            padding-left: 2rem;
+            margin-left: 0;
+        }
+    .contenu-contact{
+        margin-left: 2rem;
+    }
+}
+
+/* Fin Media query mobile */
+
+
+/* Media query talette */
+@media only screen and (min-width:769px) and (max-width:1024px){
+    /* Centre interet */
+    .centre-div{
+       height: 100%;
+    
+    }
+    .image-centre-interet{
+       height: 130px;
+       width: 130px;
+    }
+    /* Fin centre interet */
+
+    /* A propos de moi et quqlite personnelle */
+      .text-section{
+        height: auto;
+    }
+    .titre-section{
+        font-weight: 900px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contenu{
+        height: auto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 1%;
+    }
+    .icone-grade{
+        font-size: 1.5rem;
+    }
+    /* Fin a propos de moi et qualite personnelle */
+
+
+
+
+
+
+     /* Competance */
+     .pourcentage-position{
+        margin-left: 7.3rem;
+    }
+    .cadre-competance{
+        height: 100%;
+        width: 100%;
+    }
+    .html{
+        width: 108px;
+    }
+    .css{
+        width: 93px;
+    }
+    .javascript{
+        width: 66px;
+    }
+    .bootstrap{
+        width: 93px;
+    }
+    .php{
+       width: 110px; 
+    }
+    .java{
+        width: 88px;
+    }
+    .github{
+        width: 90px;
+    }
+    .ux-ui{
+        width: 110px;
+    }
+    /* Fin competance */
+
+
+
+      /* Cadre langue */
+      .cadre-langue{
+        width: 100%;
+        height: 100%;
+    }
+    .langue-parler{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 10px;  
+    }
+    .pourcentage{
+        width: 155.89px;
+    }
+    .francais{
+        width: 141px;
+    }
+    .anglais, .wolof{
+        width:68.33px;
+    }
+    .poular , .malike, .soussou {
+        width:149.83px;
+    }
+    .langue-and-pourcentage{
+        display: flex;
+        justify-content: center;
+    }
+    .nom-langue{
+        font-size: 17px;
+    }
+    .maitrise-langue{
+        font-size: 14px;
+    }
+    /* Fin cadre langue */
+
+    .formation-libelle{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .formation-date{
+        font-size: 17px;
+    }
+
+
+    /* refrence */
+       .name-referent{
+        font-size: 20px;
+        margin-top: 1.5rem;
+    }
+    .photo-reference{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .referent-div{
+        height: auto;
+    }
+
+    /* Fin reference */
+
+        /* Footer  */
+        .icone{
+            /* margin-left: 5rem; */
+            margin-right: 1rem;
+            font-size: 2rem;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+        }
+        .copyrigth{
+            font-size: 13px;
+        }
+        /* Fin footer */
+
+        .contact{
+            height: auto;
+            /* margin-left: -5rem; */
+            
+        }
+    .contenu-contact{
+        margin-left: 0;
+        padding-left: 1rem;
+        
+    }
+    .icone-and-contenu{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-left: 2rem;
+    }
+}
+/* Fin media query Tablet */
+
+
