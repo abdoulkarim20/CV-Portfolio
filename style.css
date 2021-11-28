@@ -558,7 +558,7 @@
 
 
 /* Media query mobile */
-@media only screen and (min-width: 320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width:767px) {
     /* navbar section */
     .mon-navbar{
         height: 60px;
@@ -780,7 +780,7 @@
 
 
 /* Media query talette */
-@media only screen and (min-width:769px) and (max-width:1024px){
+@media only screen and (min-width:768px) and (max-width:1024px){
     /* Centre interet */
     .centre-div{
        height: 100%;
@@ -935,7 +935,7 @@
         }
     .contenu-contact{
         margin-left: 0;
-        padding-left: 1rem;
+        padding-left: 2.5rem;
         
     }
     .icone-and-contenu{
