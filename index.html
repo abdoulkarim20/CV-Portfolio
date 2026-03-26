@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio et CV en ligne de Abdoul Karim DIALLO — Développeur Web & Web Mobile.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
-  <title>Mon Portfoli</title>
+  <title>Portfolio — Abdoul Karim DIALLO</title>
 </head>
-<body>
+<body id="top">
   <!-- Le header -->
 
     <nav class="mon-navbar navbar navbar-expand-lg position-fixed navbar-light w-100">
@@ -38,6 +39,11 @@
             <li class="nav-item pe-4">
               <a href="#contact" class="button-contact btn btn-success">Contactez-moi</a>
             </li>
+            <li class="nav-item ps-lg-2 d-flex align-items-center">
+              <button type="button" class="theme-toggle" id="themeToggle" aria-label="Basculer le thème clair/sombre">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+            </li>
           </ul>  
         </div>
       </div>
@@ -58,13 +64,13 @@
     <!-- section photo profile -->
     <section class="marge-haut">
       <div class="container">
-        <div class="profile-brief row">
-          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
+        <div class="profile-brief row g-0 align-items-center">
+          <div class="profile-image-col col-md-4 col-lg-4 col-xl-4 col-sm-12">
             <div>
               <img src="image/imagejabbar.jpeg" class="photo-profile" alt="">
             </div>
           </div>
-          <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12">
+          <div class="profile-content col-md-8 col-lg-8 col-xl-8 col-sm-12">
             <div>
               <div class="hello-div">
                 <H2 class="hello">Hello</H2>
@@ -76,26 +82,26 @@
                     <p class="fonction-karim">Je suis developpeur Web et Web Mobile</p>
                 </div>
             </div>
-            <hr>
+            <hr class="profile-separator">
             <div>
               <!-- <div class="aligne mt-3 mb-3">
                 <h2 class="titre">Age</h2>
                 <h2 class="contenu-section age">23</h2> 
               </div> -->
             </div>
-            <div class="aligne mt-3 mb-3">
+            <div class="aligne profile-item mt-3 mb-3">
               <h2 class="titre">Adresse</h2>
-              <h2 class="contenu-section Adresse">Dakar, Khar Yallah, Boulngerie BAMBA</h2> 
+              <h2 class="contenu-section Adresse">Dakar, Grand Yoff, HLM Grand Yoff</h2> 
             </div>
-            <div class="aligne mt-3 mb-3">
+            <div class="aligne profile-item mt-3 mb-3">
                   <h2 class="titre">Email</h2>
-                  <h2 class="contenu-section email">abdoulkarimfoly1996@gmail.com</h2> 
+                  <h2 class="contenu-section email">abdoulkarimakd20@gmail.com</h2> 
             </div> 
-            <div class="aligne mt-3 mb-3">
+            <div class="aligne profile-item mt-3 mb-3">
                   <h2 class="titre">Telephone</h2>
-                  <h2 class="contenu-section telepone">+221 78 165 99 48</h2>
+                  <h2 class="contenu-section telepone">+221 78 165 99 48 | +224 610 70 17 99</h2>
             </div>   
-            <div class="aligne mt-3 mb-3">
+            <div class="aligne profile-item mt-3 mb-3">
                   <h2 class="titre">Permis de conduire</h2>
                   <h2 class="contenu-section categorie">Categorie B</h2>
             </div> 
@@ -103,8 +109,8 @@
         </div>
         <div class="row">
           <div class="cadre-icone">
-            <a href="https://www.linkedin.com/in/abdoul-karim-diallo-321264200/"><i class="bi bi-linkedin style-icone"></i></a>  
-            <a href="https://github.com/abdoulkarim20"><i class="bi bi-github style-icone"></i></a>               
+            <a href="https://www.linkedin.com/in/abdoul-karim-diallo-321264200/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin style-icone"></i></a>  
+            <a href="https://github.com/abdoulkarim20" target="_blank" rel="noopener noreferrer"><i class="bi bi-github style-icone"></i></a>               
             <a href=""><i class="bi bi-facebook style-icone"></i></a>                  
             <a href=""><i class="bi bi-instagram style-icone"></i></a> 
             <a href=""><i class="bi bi-twitter style-icone"></i></a>                  
@@ -409,23 +415,66 @@
         <h2 class="titre-section text-uppercase">References</h2>
       </div>
       <div class="container">
-        <div class="referent-div row">
-          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
-            <div>
-              <img src="image/samba.png" class="photo-reference" alt="">
+        <div id="referenceCarousel" class="referent-div carousel slide" data-bs-ride="carousel" data-bs-interval="5500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#referenceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Référence 1"></button>
+            <button type="button" data-bs-target="#referenceCarousel" data-bs-slide-to="1" aria-label="Référence 2"></button>
+            <button type="button" data-bs-target="#referenceCarousel" data-bs-slide-to="2" aria-label="Référence 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center g-3 g-md-4">
+                <div class="col-md-4 col-sm-12">
+                  <img src="image/samba.png" class="photo-reference" alt="Samba Kane">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <h2 class="name-referent">Samba KANE</h2>
+                  <p class="formation-libelle-referent">Formateur Simplon SENEGAL</p>
+                  <p class="formation-libelle referent-libelle-div">"Abdoul Karim DIALLO a qui j’ai surnommé ‘DevOps’ est un apprenant stagiaire qui a su se forger sous notre plume tout en adoptant nos principes et valeurs il a su inculquer la valeur d’un Simplonien."</p>
+                  <button class="button-contact btn btn-success mt-2">Contactez-lui</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center g-3 g-md-4">
+                <div class="col-md-4 col-sm-12">
+                  <img src="image/imagejabbar.jpeg" class="photo-reference" alt="Aissatou Diallo">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <h2 class="name-referent">Aissatou DIALLO</h2>
+                  <p class="formation-libelle-referent">Cheffe de projet digital</p>
+                  <p class="formation-libelle referent-libelle-div">"Abdoul Karim est sérieux, autonome et très impliqué. Il livre les tâches dans les délais et sait bien collaborer avec une équipe technique."</p>
+                  <button class="button-contact btn btn-success mt-2">Contactez-lui</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center g-3 g-md-4">
+                <div class="col-md-4 col-sm-12">
+                  <img src="image/banneraccueil.jpeg" class="photo-reference" alt="Mamadou Bah">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <h2 class="name-referent">Mamadou BAH</h2>
+                  <p class="formation-libelle-referent">Responsable technique</p>
+                  <p class="formation-libelle referent-libelle-div">"Ses compétences web et son sens de l’organisation font la différence. Il comprend vite les besoins et propose des solutions fiables."</p>
+                  <button class="button-contact btn btn-success mt-2">Contactez-lui</button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12">
-            <div class="row mt-4">
-              <h2 class="name-referent">Samba KANE</h2>
-              <p class="formation-libelle-referent">Formateur Simplon SENEGAL</p>
-            </div>
-            <div class="row">
-              <p class="formation-libelle referent-libelle-div">"Abdoul Karim DIALLO a qui j’ai surnommé ‘DevOps’ est un apprenant stagiaire qui a su se forger sous notre plume tout en adoptant nos principes et valeurs il a su inculquer la valeur d’un Simplonien."</p>
-            </div>
-            <button class="button-contact btn btn-success mt-2 mb-5">Contactez-lui</button>
-          </div>
-        </div> 
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#referenceCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#referenceCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
       </div>
     </Section>
     <!-- fin section References -->
@@ -434,18 +483,30 @@
     <section class="mt-5 mb-5" id="interte-centre">
       <div class="container">
         <h2 class="titre-section text-uppercase">Centre d'interets</h2>
-        <div class="centre-div row">
-          <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
-            <img src="image/E.jpeg" alt="" class="image-centre-interet">
+        <div class="centre-div row g-3 g-md-4">
+          <div class="col-6 col-md-3">
+            <div class="centre-item">
+              <img src="image/E.jpeg" alt="Sport" class="image-centre-interet">
+              <p class="centre-label">Sport</p>
+            </div>
           </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
-            <img src="image/yik.jpeg" alt="" class="image-centre-interet" >   
+          <div class="col-6 col-md-3">
+            <div class="centre-item">
+              <img src="image/yik.jpeg" alt="Musique" class="image-centre-interet">
+              <p class="centre-label">Musique</p>
+            </div>
           </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
-            <img src="image/wture.jpg" alt="" class="image-centre-interet" >  
+          <div class="col-6 col-md-3">
+            <div class="centre-item">
+              <img src="image/wture.jpg" alt="Voyage" class="image-centre-interet">
+              <p class="centre-label">Voyage</p>
+            </div>
           </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
-            <img src="image/aimelire.jpg" alt="" class="image-centre-interet" >  
+          <div class="col-6 col-md-3">
+            <div class="centre-item">
+              <img src="image/aimelire.jpg" alt="Lecture" class="image-centre-interet">
+              <p class="centre-label">Lecture</p>
+            </div>
           </div>
         </div>
       </div>
@@ -540,55 +601,55 @@
         <h2 class="titre-section text-uppercase" id="contact">Contactez-moi</h2>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="mar col-md-8 col-xl-8 col-lg-8 col-sm-12">
-            <form>
-              <div class="row">
-                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
-                  <input type="text" class="champ-nom form-control" placeholder="nom*">
+        <div class="row contact-row g-3 g-lg-4 align-items-stretch">
+          <div class="mar col-lg-7 col-xl-8 col-sm-12">
+            <form id="contactForm" class="contact-form-card">
+              <div class="row g-3">
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" name="nom" class="champ-nom form-control" placeholder="Nom*" autocomplete="family-name" required>
                 </div>
-                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
-                  <input type="text" class="champ-nom form-control" placeholder="prenoms*">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
-                  <input type="text" class="champ-nom form-control" placeholder="nom*">
-                </div>
-                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
-                  <input type="text" class="champ-nom form-control" placeholder="prenoms*">
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" name="prenoms" class="champ-nom form-control" placeholder="Prénoms*" autocomplete="given-name" required>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12">
-                  <textarea class="message-text form-control" placeholder="message*"></textarea>
+              <div class="row g-3">
+                <div class="col-md-6 col-sm-12">
+                  <input type="email" name="email" class="champ-nom form-control" placeholder="Email*" autocomplete="email" required>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" name="objet" class="champ-nom form-control" placeholder="Objet*" required>
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-12">
+                  <textarea name="message" class="message-text form-control" placeholder="Message*" required></textarea>
                 </div>
               </div>
               <button class="button-contact btn btn-success mt-2 mb-2">Envoyer</button>
             </form>
           </div>
-          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
+          <div class="col-lg-5 col-xl-4 col-sm-12">
             <div class="contact">
               <div class="icone-and-contenu mb-3">
-                <img src="image/mapicone.png" alt="" class="image-icone">
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></span>
                 <div class="contenu-contact">
                   <h4 class="formation-date">Adresse</h4>
-                  <p class="formation-libell">Dakar, Khar Yallah <br>
-                    Boulangerie Bamba
+                  <p class="formation-libell">Dakar, Grand Yoff, <br>
+                    HLM Grand Yoff
                   </p>
                 </div>
               </div>
               <div class="icone-and-contenu mb-3">
-                <img src="image/iconetelephone.jpg" alt="" class="image-icone">
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></span>
                 <div class="contenu-contact">
                   <h4 class="formation-date" >Telephone</h4>
                   <p class="formation-libell">+221 78 165 99 48 <br>
-                    +221 70 574 34 03
+                    +224 610 70 17 99
                   </p>
                 </div>
               </div>
               <div class="icone-and-contenu mb-3">
-                <img src="image/emailicone.png" alt="" class="image-icone">
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></span>
                 <div class="contenu-contact">
                   <h4 class="formation-date">Email</h4>
                   <p class="formation-libell">jabbar@gmail.com
@@ -612,10 +673,10 @@
       <footer>
         <div class="footer-div">
           <div class="copyrigth">
-            <span>Copyright &copy;2021 By FoolyKhady</span>
+            <span>Copyright &copy;<span id="currentYear">2021</span> — Abdoul Karim DIALLO</span>
           </div>
           <div class="icone">
-            <a href=""><span><i class="bi bi-chevron-up" style="color: black;"></i></span></a>
+            <a href="#top" aria-label="Revenir en haut"><span><i class="bi bi-chevron-up" style="color: black;"></i></span></a>
           </div>
         </div>
       
@@ -626,6 +687,7 @@
 
   
 
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
